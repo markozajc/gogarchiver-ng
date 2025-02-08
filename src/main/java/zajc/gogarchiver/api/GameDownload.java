@@ -58,7 +58,7 @@ public record GameDownload(@Nonnull Game game, @Nonnull String originalUrl, @Non
 	private static Type parseType(@Nonnull String url) {
 		var m = TYPE_PATTERN.matcher(url.substring(url.lastIndexOf('/') + 1));
 		if (!m.find()) {
-			warn("Could not extract download type from the url: %s. Please report this to marko@zajc.eu.org.", url);
+			warn("Could not extract download type from the url: %s. Please report this to marko@zajc.tel.", url);
 			return UNKNOWN;
 		}
 
@@ -66,7 +66,7 @@ public record GameDownload(@Nonnull Game game, @Nonnull String originalUrl, @Non
 			case "installer" -> INSTALLER;
 			case "patch" -> PATCH;
 			default -> {
-				warn("Unknown download type: %s. Please report this to marko@zajc.eu.org.", m.group(1));
+				warn("Unknown download type: %s. Please report this to marko@zajc.tel.", m.group(1));
 				yield UNKNOWN;
 			}
 		};
@@ -75,7 +75,7 @@ public record GameDownload(@Nonnull Game game, @Nonnull String originalUrl, @Non
 	private static int parsePart(@Nonnull String url) {
 		var m = PART_PATTERN.matcher(url);
 		if (!m.find()) {
-			warn("Could not extract part number from the url: %s. Please report this to marko@zajc.eu.org.", url);
+			warn("Could not extract part number from the url: %s. Please report this to marko@zajc.tel.", url);
 			return 0;
 
 		} else {

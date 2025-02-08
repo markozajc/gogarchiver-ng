@@ -30,10 +30,10 @@ The output runnable JAR will be written to `target/gogarchiver-ng.jar`. There wi
 The cookie can be passed to gogarchiver-ng directly (via `-k`) or through a file for better security (via `-K`).
 
 ## Available on:
-* [https://git.zajc.eu.org/gogarchiver-ng.git/](https://git.zajc.eu.org/gogarchiver-ng.git/)
+* [https://git.zajc.tel/gogarchiver-ng.git/](https://git.zajc.tel/gogarchiver-ng.git/)
 * [https://github.com/markozajc/gogarchiver-ng/](https://github.com/markozajc/gogarchiver-ng/)
 
-Prebuilt binaries are available at [https://files.zajc.eu.org/builds/gogarchiver-ng/](https://files.zajc.eu.org/builds/gogarchiver-ng/).
+Prebuilt binaries are available at [https://files.zajc.tel/builds/gogarchiver-ng/](https://files.zajc.tel/builds/gogarchiver-ng/).
 
 <div class="sect1">
 <h2 id="_options">Usage</h2>
