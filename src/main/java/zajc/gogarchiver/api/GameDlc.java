@@ -20,7 +20,7 @@ import java.util.Objects;
 
 import javax.annotation.Nonnull;
 
-import kong.unirest.json.*;
+import kong.unirest.core.json.*;
 
 public class GameDlc extends Game {
 
@@ -58,12 +58,10 @@ public class GameDlc extends Game {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		else if (!super.equals(obj))
+		else if (!super.equals(obj) || !(obj instanceof GameDlc other))
 			return false;
-		else if (obj instanceof GameDlc other)
-			return Objects.equals(this.parent, other.parent);
 		else
-			return false;
+			return Objects.equals(this.parent, other.parent);
 	}
 
 }

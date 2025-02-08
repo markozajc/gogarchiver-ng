@@ -23,7 +23,7 @@ import java.util.*;
 
 import javax.annotation.Nonnull;
 
-import kong.unirest.json.*;
+import kong.unirest.core.json.*;
 import zajc.gogarchiver.api.GameDownload.Platform;
 
 public class Game {
@@ -36,7 +36,7 @@ public class Game {
 
 	@SuppressWarnings("null")
 	protected Game(@Nonnull User user, @Nonnull String id, @Nonnull String title, @Nonnull JSONObject downloads,
-				@Nonnull JSONArray dlcs) {
+				   @Nonnull JSONArray dlcs) {
 		this.user = user;
 		this.id = id;
 		this.title = title;

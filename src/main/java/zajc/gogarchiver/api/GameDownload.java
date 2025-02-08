@@ -32,13 +32,12 @@ import java.util.regex.Pattern;
 
 import javax.annotation.*;
 
-import kong.unirest.json.JSONObject;
+import kong.unirest.core.json.JSONObject;
 import me.tongfei.progressbar.ProgressBar;
 import zajc.gogarchiver.util.LazyValue;
 
 public record GameDownload(@Nonnull Game game, @Nonnull String originalUrl, @Nonnull LazyValue<String> resolvedUrl,
-						   @Nonnull Platform platform, @Nullable String name, @Nullable String version,
-						   @Nonnull Type type, int part) {
+	@Nonnull Platform platform, @Nullable String name, @Nullable String version, @Nonnull Type type, int part) {
 
 	private static final Pattern TYPE_PATTERN = compile("\\d+(\\p{IsLatin}+)");
 	private static final Pattern PART_PATTERN = compile("\\d+$");

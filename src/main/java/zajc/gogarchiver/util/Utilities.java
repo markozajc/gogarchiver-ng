@@ -23,8 +23,8 @@ import java.util.stream.*;
 
 import javax.annotation.*;
 
-import kong.unirest.HttpResponse;
-import kong.unirest.json.JSONArray;
+import kong.unirest.core.HttpResponse;
+import kong.unirest.core.json.JSONArray;
 import picocli.CommandLine.Help.*;
 
 public class Utilities {

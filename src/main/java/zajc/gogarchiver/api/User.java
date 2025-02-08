@@ -29,8 +29,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import javax.annotation.*;
 
-import kong.unirest.*;
-import kong.unirest.json.JSONObject;
+import kong.unirest.core.*;
+import kong.unirest.core.json.JSONObject;
 import me.tongfei.progressbar.ProgressBar;
 import zajc.gogarchiver.exception.NotLoggedInException;
 import zajc.gogarchiver.util.LazyValue;

@@ -23,6 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
+		<unirest.version>4.4.5</unirest.version>
 	</properties>
 
 	<dependencies>
@@ -30,8 +31,14 @@
 		<!-- HTTP Client -->
 		<dependency>
 			<groupId>com.konghq</groupId>
-			<artifactId>unirest-java</artifactId>
-			<version>3.14.5</version>
+			<artifactId>unirest-java-core</artifactId>
+			<version>${unirest.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.konghq</groupId>
+		    <artifactId>unirest-modules-jackson</artifactId>
+		    <version>${unirest.version}</version>
+		    <scope>runtime</scope>
 		</dependency>
 
 		<!-- CLI support -->
